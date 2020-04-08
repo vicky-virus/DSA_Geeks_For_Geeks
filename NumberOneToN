@@ -1,0 +1,27 @@
+//WAP to print 1 to n without using loop.
+
+#include <iostream>
+using namespace std;
+
+void fun(int n)
+{
+	if(n==1){
+		cout<<1<<" ";
+		return;
+	}
+	if(n<1){
+		fun(n+1);
+		cout<<n<<" ";
+	}
+	else if(n>1){
+		fun(n-1);
+		cout<<n<<" ";
+		
+	}
+}
+
+int main() {
+	// your code goes here
+	fun(-20);
+	return 0;
+}
